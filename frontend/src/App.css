@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.services,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.services {
+  background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.Aboutus {
+  background-image: url('https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url('https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1467&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+/* Destination page*/
+.destination {
+  background-image: url('https://images.unsplash.com/photo-1520513455472-b259f1ec720a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 350px;
+
+}
+
+.destination-container {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.destination-container h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.destination-container p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 800px;
+}
+
+.info-wrapper {
+  max-width: 800px;
+}
+
+h3 {
+  margin: 3rem 0 1.3rem 0;
+  font-size: 2.4rem;
+}
+
+h4 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.destination-container ul li {
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+.booking-container {
+  width: 350px;
+  height: fit-content;
+  align-items: center;
+  display: flex;
+  padding: 1.4rem;
+  border: 2px solid #242424;
+  border-radius: 5px;
+}
+
+.booking-wrapper {
+  width: 100%;
+}
+
+.booking-info h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.booking-info .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.booking-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.btn-book {
+  width: 100%;
+  padding: 12px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #242424;
+  cursor: pointer;
+}
+
+.btn-book:hover {
+  background-color: #b1b1b1;
+  color: #242424;
+}
+
+
+.notification {
+  position: fixed;
+  top: 50%;
+  left: -300px;
+  background-color: #4CAF50; 
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  transition: left 0.3s ease; 
+}
+
+.notification.show {
+  left: 50%; 
+}
+
+
+/*Sign up Page and Sign in*/
+.form-modal__container {
+  margin: 0 0.5rem;
+}
+.form-modal__wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  height: 500px;
+  margin: 4rem auto;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 350px;
+  height: inherit;
+  border-radius: 10px 0 0 10px;
+}
+
+.sign-up > img {
+  object-fit: cover;
+  width: auto;
+  height: auto;
+}
+
+.sign-up__container {
+  background: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  justify-content: center;
+}
+
+.sign-up__container > h2 {
+ font-size: 3rem;
+ margin-bottom: 2rem;
+}
+
+.sign-up__form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.sign-up__form > label {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+
+.sign-up__form > input {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+}
+
+.sign-up__form .btn-sign {
+  padding: 12px 26px;
+  width: fit-content;
+  margin: 1.5rem auto 0;
+  border-radius: 2px;
+  font-size: 20px;
+  border: 1px solid #242424;
+  background-color: #242424;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sign-up__form .btn-sign:hover {
+  color: #242424;
+  background-color: #fff;
+}
+
+.have-account {
+  font-size: 0.9rem;
+  color: #5a5a5a;
+}
+
+.have-account span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 798px) {
+  .destination-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+.validation-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.validation-popup p {
+  margin: 0;
+}
+
+.validation-popup button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.validation-popup button:hover {
+  background-color: #0056b3;
+}
+
+
+.about-us {
+  margin: 4rem 6rem;
+  text-align: start;
+}
+
+h1 {
+  padding-bottom: 1rem;
+}
+
+h2 {
+  padding-bottom: 1rem;
+}
+
+p {
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .about-us {
+    margin: 4rem 2rem;
+    text-align: start;
+  }
+}
+/* Style the contact information */
+.contact-info {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
